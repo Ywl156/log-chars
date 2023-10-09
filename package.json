@@ -1,0 +1,52 @@
+{
+  "name": "log-chars",
+  "version": "1.0.1",
+  "description": "Output characters suitable for command line display (simple logo)",
+  "main": "index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.js",
+  "jsdelivr": "dist/index.js",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "log",
+    "chars",
+    "logo",
+    "console",
+    "print",
+    "letter",
+    "number",
+    "command"
+  ],
+  "author": "ywl_156",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ywl156/log-chars"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/node": "^20.8.3",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.0.2",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
